@@ -108,15 +108,14 @@ class CurrencyInput extends Component {
   }
 
   render() {
+    let {format, value, onUpdate, ...others} = this.props;
     return (
       <div>
         <input ref="currencyInput"
-             type="text"
-             value={this.state.value}
-             onChange={this.updateValue}/>
-        <br/>
-        <br/>
-        <span>Raw Value: <b>{this.state.raw}</b></span>
+               type="text"
+               value={this.state.value}
+               onChange={this.updateValue}
+               {...others} />
       </div>
     )
   }

@@ -30,7 +30,7 @@ onButtonUpdate(e) {
         <p className="App-intro">
           Try entering a number into the text box
         </p>
-        <CurrencyInput value={this.state.inputValue} format={this.state.inputFormat} onUpdate={this.onInputUpdate}/>
+        <CurrencyInput id="currency" className="curr" style={{width: '33px'}} value={this.state.inputValue} format={this.state.inputFormat} onUpdate={this.onInputUpdate}/>
         <input type="button" value={this.state.inputFormat} onClick={this.onButtonUpdate} />
       </div>
     );
