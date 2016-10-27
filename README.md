@@ -25,6 +25,7 @@ function updateFn(rawValue) {
 }
 React.render(<CurrencyInput value={initValue} format={initFormat} onUpdate={updateFn}/>, mountNode);
 ```
-
-2. Drag and Drop components
----
+## TODO
+1. Drag and Drop components
+2. Date Picker
+3. Tabbed Pane
